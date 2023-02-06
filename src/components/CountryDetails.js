@@ -11,18 +11,18 @@ function CountryDetails() {
   console.log(countryFiltered);
   return (
     <div class="col-7">
-      <h1>France</h1>
+      <h1>{countryFiltered.name.official}</h1>
       <table class="table">
         <thead></thead>
         <tbody>
           <tr>
-            <td style={{width: "30%"}}>Capital</td>
-            <td>Paris</td>
+            <td style={{ width: '30%' }}>Capital</td>
+            <td>{countryFiltered.capital}</td>
           </tr>
           <tr>
             <td>Area</td>
             <td>
-              551695 km
+              {countryFiltered.area} km
               <sup>2</sup>
             </td>
           </tr>
@@ -33,8 +33,6 @@ function CountryDetails() {
                 <li>
                   <a href="/AND">Andorra</a>
                 </li>
-               
-                
               </ul>
             </td>
           </tr>
